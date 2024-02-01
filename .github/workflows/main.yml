@@ -16,7 +16,7 @@ jobs:
     - name: Install Flutter
       uses: subosito/flutter-action@v1
       with:
-        flutter-version: '1.22.5' # 请根据你的项目需求选择合适的Flutter版本
+        flutter-version: '3.16.9' # 请根据你的项目需求选择合适的Flutter版本
 
     - name: Install dependencies
       run: flutter pub get
