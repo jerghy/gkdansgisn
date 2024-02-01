@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:drinkshop/add_button.dart';
 import 'package:drinkshop/colors.dart';
 import 'package:drinkshop/drink_carousel.dart';
-import 'package:drinkshop/icons.dart';
+// import 'package:drinkshop/icons.dart';
 import 'package:drinkshop/models.dart';
 import 'package:drinkshop/settings_button.dart';
 import 'package:flutter/material.dart';
