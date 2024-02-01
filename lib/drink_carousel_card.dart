@@ -47,7 +47,7 @@ class DrinkCarouselCardPainter extends CustomPainter {
     cardPath.close();
     canvas.drawPath(cardPath, cardPaint);
 
-    canvas.rotate(8 * (PI / 180));
+    canvas.rotate(8 * (pi / 180));
     canvas.save();
 
     final horizontalPadding = 5.0;
@@ -62,7 +62,7 @@ class DrinkCarouselCardPainter extends CustomPainter {
     );
     canvas.drawRRect(rrect, cardLinePaint);
 
-    canvas.rotate(4 * (PI / 180));
+    canvas.rotate(4 * (pi / 180));
 
     rrect = new RRect.fromLTRBR(
       0.2 * size.width + horizontalPadding,
