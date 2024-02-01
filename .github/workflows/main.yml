@@ -1,0 +1,34 @@
+name: Flutter Build
+
+on:
+  push:
+    branches: master 
+  
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install Flutter
+      uses: subosito/flutter-action@v1
+      with:
+        flutter-version: '1.22.5' # 请根据你的项目需求选择合适的Flutter版本
+
+    - name: Install dependencies
+      run: flutter pub get
+
+    - name: Verify and analyze project
+      run: flutter analyze
+
+    - name: Build project
+      run: flutter build apk --release
+
+    - name: Upload build artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: app-release
+        path: build/app/outputs/flutter-apk/app-release.apk
