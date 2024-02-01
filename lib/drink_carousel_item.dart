@@ -55,7 +55,7 @@ class DrinkCarouselItemState extends State<DrinkCarouselItem>
         (-1 * translateAnimation.value) + 10.0,
         -1 * translateAnimation.value,
         0.0)
-      ..rotateZ(-1 * tiltAnimation.value * (PI / 180));
+      ..rotateZ(-1 * tiltAnimation.value * (pi / 180));
     return new GestureDetector(
       onTap: _tapped,
       child: new Transform(
