@@ -65,11 +65,11 @@ class DrinkSwitchMenuState extends State<DrinkSwitchMenu>
     final inactiveTransform = new Matrix4.identity()
       ..translate(-10.0 - drinksTranslateAnimation.value, 0.0, 0.0)
       ..scale(drinksScaleAnimation.value, drinksScaleAnimation.value)
-      ..rotateZ(-drinksTiltAnimation.value * (PI / 180));
+      ..rotateZ(-drinksTiltAnimation.value * (pi / 180));
     final activeTransform = new Matrix4.identity()
       ..translate(0.0, 10.0 + drinksTranslateAnimation.value, 0.0)
       ..scale(drinksScaleAnimation.value, drinksScaleAnimation.value)
-      ..rotateZ(drinksTiltAnimation.value * (PI / 180));
+      ..rotateZ(drinksTiltAnimation.value * (pi / 180));
 
     final glass = new Transform(
       key: glassKey,
